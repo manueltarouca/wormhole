@@ -1,3 +1,20 @@
 <section>
-  <h1>Hello world.</h1>
+  <p-toast></p-toast>
+
+  <div class="card">
+    <h1>Upload File</h1>
+    <p-fileUpload mode="basic" name="demo[]" url="http://localhost:3000/api/upload" accept="image/*" maxFileSize="1000000"
+      (onUpload)="onBasicUpload($event)"></p-fileUpload>
+  </div>
+</section>
+<hr>
+<section>
+  <h1>Send secret</h1>
+  <textarea></textarea>
+</section>
+<hr>
+<section>
+  <h1>Got code?</h1>
+  <input type="search">
+  <button type="submit">Enter</button>
 </section>
